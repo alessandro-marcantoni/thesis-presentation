@@ -28,7 +28,6 @@ jobs:
         uses: xu-cheng/latex-action@v2
         with:
           root_file: ${{ env.LATEX_ROOT }}.tex
-          compiler: pdflatex
           
       - name: Get Version
         id: get-version
