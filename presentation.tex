@@ -9,6 +9,9 @@
 \usepackage{graphicx}
 \usepackage{hyperref}
 \usepackage{csquotes}
+\usepackage{biblatex}
+
+\addbibresource{bibliography.bib}
 
 \newcommand{\versionmajor}{0}
 \newcommand{\versionminor}{1}
@@ -44,8 +47,7 @@
 \section*{\refname}
 \setbeamertemplate{page number in head/foot}{}
 \begin{frame}[t,allowframebreaks,noframenumbering]{References}
-    \bibliography{bibliography}{}
-    \bibliographystyle{plain}
+    \printbibliography
 \end{frame}
 
 \end{document}
