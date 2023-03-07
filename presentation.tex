@@ -25,6 +25,8 @@
 \institute[]{\disi\\Alma Mater Studiorum - Universit\`{a} di Bologna} 
 \date[\today]{Academic Year 2021/2022}
 
+\newcommand{\moise}{$\mathcal{M}\text{\footnotesize{OISE}}$}
+
 \begin{document}
 
 \begin{frame}
@@ -36,5 +38,16 @@
 \end{frame}
 
 \input{sections/01-context.tex}
+\input{sections/02-background.tex}
+
+\begin{frame}
+    \titlepage
+\end{frame}
+
+\section*{\refname}
+\setbeamertemplate{page number in head/foot}{}
+\begin{frame}[t,allowframebreaks,noframenumbering]{References}
+    \printbibliography
+\end{frame}
 
 \end{document}
