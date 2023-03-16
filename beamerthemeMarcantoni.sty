@@ -66,6 +66,62 @@
 %
 \usepackage[T1]{fontenc}
 %
+\defbeamertemplate*{title page}{customized}[1][]
+{
+    \begingroup
+        \centering
+        \begin{beamercolorbox}[sep=8pt,center]{institute}
+            \usebeamerfont{institute}\insertinstitute
+        \end{beamercolorbox}
+        \vskip0.5em\par
+        \begin{beamercolorbox}[sep=8pt,center,rounded=true,shadow=true]{title}
+            \usebeamerfont{title}\inserttitle\par%
+            \usebeamerfont{subtitle}\insertsubtitle   
+        \end{beamercolorbox}%
+    \endgroup
+    \vskip1.5em
+    \begingroup
+        \begin{columns}
+            \begin{column}{0.5\textwidth}
+                \raggedright
+                \noindent
+                \scriptsize{
+                    \hspace{-0.08cm}\emph{Supervisor:}\par
+                }
+                \small{
+                    \usebeamerfont{author}Prof.\ Alessandro Ricci\par
+                }
+                \vskip0.5em
+                \scriptsize{
+                    \emph{Co-Supervisors:}\par
+                }
+                \small{
+                    \usebeamerfont{author}Prof.\ Simon Mayer\par
+                    \usebeamerfont{author}Dott.\ Samuele Burattini\par
+                }
+            \end{column}
+            
+            \begin{column}{0.5\textwidth}
+                \raggedleft
+                %\vskip-3.85em
+                \scriptsize{
+                    \emph{Presented by:}\par
+                }
+                \small{
+                    \usebeamerfont{author}\insertauthor
+                }
+            \end{column}
+        \end{columns}
+    \endgroup
+      % ------------------------
+      \vskip1em
+      \begin{beamercolorbox}[sep=8pt,center]{date}
+        \usebeamerfont{date}\insertdate
+      \end{beamercolorbox}\vskip0.5em
+      {\usebeamercolor[fg]{titlegraphic}\inserttitlegraphic\par}
+    \vfill
+}
+%
 \setbeamertemplate{footline}{
     \leavevmode%
     \hbox{%
